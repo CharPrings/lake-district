@@ -4,17 +4,29 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 .grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-    margin: 20px;
+    grid-gap: 64px;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+   grid-template-columns: 1fr 2fr 2fr;
 }
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
@@ -27,7 +39,7 @@ header {
 }
 header h1 {
   font-weight: 700;
-  font-size: 96px;
+  font-size: 80px;
   line-height: 1;
   margin: 30px 0;
 }
@@ -62,13 +74,44 @@ header a {
   background: white;
 }
 
+main {
+    background-color: white;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: 5px;
+    color: #272044;
+    opacity: 0.3;
+    text-transform: uppercase;
+}
+
+main h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #272044;
+    margin: 0;
+}
+
+main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #272044;
+    opacity: 0.7;
+}
 footer {
   color: white;
   background-image: linear-gradient(rgba(39, 32, 68, 0.7), rgba(39, 32, 68, 0.7)),
     url("../images/lake-view.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 30px;
+    padding: 0 30px;
 }
 
 footer h3 {
@@ -81,8 +124,7 @@ footer p {
     font-weight: 400;
     font-size: 16px;
     opacity: 0.7;
-    
-    margin-right: 20px;
+    margin-right: 24px;
 }
 
 footer ul {
@@ -104,12 +146,18 @@ footer a {
     padding: 60px 0;
   }
   header h1 {
-    font-size: 48px;
+    font-size: 50px;
   }
   header h2 {
     font-size: 20px;
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  section {
+    padding: 30px;
   }
 }
