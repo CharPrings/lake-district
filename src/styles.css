@@ -9,7 +9,6 @@ body {
 }
 .grid {
     display: grid;
-    grid-gap: 64px;
 }
 
 .img-responsive {
@@ -21,7 +20,7 @@ body {
 }
 
 .grid-3-columns-with-first-narrow {
-   grid-template-columns: 1fr 2fr 2fr;
+   grid-template-columns: 2fr 2fr 2fr;
 }
 section {
     max-width: 1200px;
@@ -78,10 +77,14 @@ main {
     background-color: white;
 }
 
+.scafell-pike-text {
+    margin-left: 30px;
+}
+
 main h2 {
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 2;
     margin: 0;
     letter-spacing: 5px;
     color: #272044;
@@ -92,7 +95,7 @@ main h2 {
 main h3 {
     font-weight: 700;
     font-size: 40px;
-    line-height: 1.5;
+    line-height: 1;
     color: #272044;
     margin: 0;
 }
