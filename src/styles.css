@@ -245,6 +245,14 @@ footer section {
     padding: 30px;
   }
 
+  footer section {
+    padding: 0;
+  }
+
+  footer .grid {
+    gap: 0;
+  }
+
   .card-header img {
     display: none;
   }
@@ -252,4 +260,5 @@ footer section {
   .embed {
     aspect-ratio: 16/9;
    }
+
 }
